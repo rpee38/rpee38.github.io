@@ -9,7 +9,7 @@ html * {
 	font-family: Arial, Helvetica, sans-serif;
 }
 p {
-	font-size: 16px;
+	font-size: 15px;
 	color: #333;
 	font-family: Arial, Helvetica, sans-serif;
 	margin-top: 1em; /* on ajoute un espace avant chaque paragraphe */
@@ -24,7 +24,7 @@ p {
 
 h1 {   /* Titre des pages, accueil, description etc... */
 
-    font-size: 19px;
+    font-size: 18px;
 	font-variant: small-caps;
 	color: #666;
 	font-family: Arial, Helvetica, sans-serif;
@@ -91,7 +91,7 @@ margin-left:15%;
 }
 
 .style-langue {
-	font-size: 18px;
+	font-size: 19px;
 	margin-left: 10px;
 	color: #8695AC;
 	margin-bottom: 0px;
