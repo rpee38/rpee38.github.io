@@ -235,15 +235,15 @@ background:#ffffff;
 	color: #575050;
 	font-family: Arial, Helvetica, sans-serif;
 	font-variant: small-caps;
-	font-size: 20px;
+	font-size: 28px;
 	margin-left: 1px;
-	margin-right: px;	
+	margin-right: 1px;	
 }
 #menu-demo2 ul a{
 	padding: 8px 0;
 	color: #575050;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 26px;
 	font-variant: normal;
 }
 #menu-demo2 li:hover li a{
