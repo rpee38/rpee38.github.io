@@ -249,7 +249,7 @@ background:#ffffff;
 #menu-demo2 li:hover li a{
 	color: #575050;
 	/* text-transform: inherit; */
-	background: #f2f5f7;
+	background: #e3e3e3;
 	text-decoration: none;
 }
 #menu-demo2 li:hover a, #menu-demo2 li li:hover a{
