@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>-phon : code phonétique </title>
+    <style><!--
+.Normal
+	{font-size:12.0pt;
+	font-family:"Times New Roman";}
+-->
+</style> </head>
+  <body style="                          background-color: white;margin-left:4%;margin-right:10%">
+    <p style="text-autospace:none" align="center">&nbsp;</p>
+    <p style="text-autospace:none" align="center"><font face="Arial, Helvetica, sans-serif"
+        size="2"><b>Champs généraux</b></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-phon&nbsp;: code phonétique </span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-hom&nbsp;: champ mentionnant s’il existe ou
+          non des autres entrées homophoniques (hétérographiques ou non).
+          Valeurs&nbsp;: 1= mot homophone&nbsp;; 0= mot non-homophone.</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-graph&nbsp;: représentation orthographique
+          du mot</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-graphies&nbsp;: représentations
+          orthographiques des entrées homophoniques</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-cgram&nbsp;: classe grammaticale (NO: nom;
+          AJ: adjectif; VB: verbe; AV: adverbe; CO: conjonction; LO: locution;
+          PN: pronom; IN: interjection; AR: article; PR: preposition).</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-cgramH&nbsp;: classes grammaticales des
+          homophones</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-nphons&nbsp;: nombre de phonèmes</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-Franfreqpm: fréquence formelle (selon
+          LEXIQUE) de l’entrée orthographique (arrondie à l’unité par million)</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-Frecum&nbsp;: fréquences cumulées des
+          entrées orthographiques homophones (fréquence de la forme
+          phonologique)</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-nsyll&nbsp;: nombre de syllabe</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-psylpal&nbsp;: segmentation syllabique. Les
+          transitions syllabiques sont représentées par le signe “&nbsp;-&nbsp;”</span></font></p>
+    <p style="text-autospace:none" align="center"><font face="Arial, Helvetica, sans-serif"
+        size="2"><span style="font-size:10.0pt;"><b>Calculs de Cohorte&nbsp;</b></span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">(rmq. Le mot cible n’est jamais comptabilisé
+          dans les différentes cohortes. Il s’agit donc des nombres de mots
+          “&nbsp;compétiteurs&nbsp;”)</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">PU: point d'unicité du mot</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">PUS&nbsp;: point d’unicité du mot calculé
+          par rapport aux mots possédant la même première syllabe</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">CoPty2 à CoPty9&nbsp;: nombre de candidats
+          dans la cohorte au Xe phonème. La 9e position correspond au silence
+          suivant la fin du mot pour les mots de 8 phonèmes. La cohorte sur le
+          1er phonème n’est pas fournie (elle correspond au nombre de mots ayant
+          un premier phonème identique). <b>Sigles&nbsp;: Co= cohorte&nbsp;; P=
+            phonologique&nbsp;; ty= calculs par type</b><br>
+          CoPto2 à CoPto9: idem que CoPty2 à CoPty9 mais par token. Il s’agit
+          donc de la fréquence cumulée des mots présents dans la cohorte. </span><span
+          style="font-size:10.0pt;" lang="EN-GB"><b>Sigle: to = calcul par token</b></span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">HfCoPty2 à HfCoPty9&nbsp;: idem que CoPty2 à
+          CoPty9 en ne considérant que les mots plus fréquents que le mot cible.
+          Il s’agit donc d’une fraction de la cohorte considérée dans CoPty2 à
+          CoPty9. <b>Sigle&nbsp;: Hf= haute fréquence</b><br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">HfCoPto2
+          à HfCopto9&nbsp;: idem que HfCoPty2 à HfCopto9 mais par token. Il
+          s’agit donc de la fréquence cumulée des mots plus fréquents dans la
+          cohorte. </span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">SCoPty2 à ScoPty9&nbsp;: nombre de candidats
+          dans la cohorte ayant la même première syllabe que le mot cible. Il
+          s’agit d’un sous ensemble de la cohorte telle que calculée en CoPty2 à
+          CoPty9. <b>Sigle&nbsp;: S=syllabe</b><br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">SCoPto2
+          à ScoPto9&nbsp;: idem que SCoPty2 à ScoPty9 mais par token. Il s’agit
+          donc de la fréquence cumulée des mots de la cohorte ayant une même
+          première syllabe</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">HfSCoPty2 à HfSCoPty9&nbsp;: idem que
+          SCoPty2 à ScoPty9 mais en ne considérant que les mots plus fréquents<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">HfSCoPto2
+          à HfSCoPto9&nbsp;: idem que HfSCoPty2 à HfSCoPty9 par token. Il s’agit
+          donc de la fréquence cumulée des mots de la cohorte qui sont plus
+          fréquents que la cible, et ayant la même première syllabe</span></font></p>
+    <p style="text-autospace:none" align="center"><font face="Arial, Helvetica, sans-serif"
+        size="2"><span style="font-size:10.0pt;"><b>Calculs de Voisinage&nbsp;</b></span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">Le voisinage est déterminé en prenant en
+          compte:<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-les
+          voisins par substitution d’un caractère phonétique<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2">-les
+        voisins&nbsp; par addition d’un caractère<br>
+      </font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-les
+          voisins par délétion d’un caractère</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">Les calculs déterminent:<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-le
+          nombre total de voisins<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-le
+          nombre total de voisins plus fréquents<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-le
+          nombre de voisins par substitution<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-le
+          nombre de voisins par addition<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-le
+          nombre de voisins par délétion</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">(tous les calculs ci-dessus sont réalisés
+          par type et par token)</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">en outre, les valeurs par type sont fournies
+          pour:<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-le
+          nombre de voisins par substitution pour chaque position<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-le
+          nombre de voisins par addition pour chaque position<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-le
+          nombre de voisins par délétion pour chaque position</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">Les différents champs informatifs sont les
+          suivants:</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-voty: nbr de voisins total par type (somme
+          des trois sortes de voisins). <b>Sigle: vo = voisin</b><br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-voto:
+          idem par token</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-vohfty: nbre de voisins total plus
+          fréquents par type<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-vohfto:
+          idem par token</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-voSty&nbsp;: nombre de voisins par
+          substitution, par type.<b> Sigle&nbsp;: S = substitution</b><br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-voSto&nbsp;:
+          idem par token</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-voAty&nbsp;: idem pour les voisins par
+          addition. </span><span style="font-size:
+10.0pt;" lang="EN-GB"><b>Sigle&nbsp;: A = addition</b><br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;"
+          lang="EN-GB">-voAto&nbsp;: idem par token</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-voDty&nbsp;: idem pour les voisins par
+          délétion. <b>Sigle&nbsp;: D = délétion</b><br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-voDto&nbsp;:
+          idem par token</span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-voSty1 à voSty8: nombre de voisin par
+          substitution pour chaque position, par type.<br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2"><span>&nbsp;</span>-voAty1
+        à voAty8: idem pour les voisins par addition.<br>
+      </font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-voDty1
+          à voDty8: idem pour les voisins par délétion. </span></font></p>
+    <p style="text-autospace:none"><font face="Arial, Helvetica, sans-serif" size="2"><span
+          style="font-size:10.0pt;">-voHSty1 à voHSty8: nombre de voisin par
+          substitution plus fréquents pour chaque position, par type. <b>Sigle&nbsp;:
+            H = voisin de plus Haute fréquence</b><br>
+        </span></font><font face="Arial, Helvetica, sans-serif" size="2">-voHAty1
+        à voHAty8: idem pour les voisins par addition.<br>
+      </font><font face="Arial, Helvetica, sans-serif" size="2"><span style="font-size:10.0pt;">-voHDty1
+          à voHDty8: idem pour les voisins par délétion.</span></font></p>
+    <p style="text-autospace:none">&nbsp;</p>
+    <p style="text-autospace:none">&nbsp;</p>
+  </body>
+</html>
