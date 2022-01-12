@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <title>Manulex-Morpho. Orthography Phonology Consistency and morphology</title>
+    <meta name="ROBOTS" content="index,follow,all">
+    <meta name="identifier-url" content="http://webu2.upmf-grenoble.fr/LPNC/resources/ronald_peereman/Manulex_morpho/">
+    <meta name="Language" content="english">
+    <meta name="Description" content="ManulexMorpho: Orthography Phonology statistics in French elementary school readers."
+
+      xml:lang="en" lang="en">
+    <meta name="Keywords" content="lexical database, language, infra-lexical statistics, grapheme, phoneme, orthography-phonology statistics, French elementary school readers">
+    <meta name="Classification " content="Psycholinguistics, education, language, lexical database, reading and writing acquisition">
+    <meta name="generator" content="Macromedia Dreamweaver">
+    <meta name="category" content="psycholinguistics, language, lexical database">
+    <link href="morpho.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+<!--
+body {
+	background-image: url();
+	
+	background-repeat: repeat;
+	background-color: #CCCCCC;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.Style5 {font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;}
+.Style9 {
+	font-size: 18px;
+	color: #0066FF;
+}
+.Style14 {font-family: Verdana, Arial, Helvetica, sans-serif}
+.Style22 {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	color: #333333;
+}
+.Style26 {font-size: 10px; color: #0066FF; }
+.Style29 {
+	font-size: 13px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #0066FF;
+	font-weight: bold;
+}
+.Style30 {
+	color: #0066FF;
+	font-weight: bold;
+}
+.Style31 {font-family: Geneva, Arial, Helvetica, sans-serif; color: #333333; font-size: 16px;}
+.Style32 {font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #333333; }
+.Style33 {color: #333333}
+.Style35 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+.Style36 {font-size: 13px; font-family: Geneva, Arial, Helvetica, sans-serif; }
+.Style37 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+.Style40 {font-size: 12}
+.Style42 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
+.Style43 {font-family: Geneva, Arial, Helvetica, sans-serif}
+.Style44 {font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 10px; }
+.Style47 {
+	font-size: 24px;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.Style49 {font-size: 14px; color: #333333; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.Style50 {font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #0066FF; font-weight: bold; }
+.Style55 {font-size: 16px; color: #980606; font-family: Verdana, Arial, Helvetica, sans-serif;font-weight: bold; }
+-->
+</style> </head>
+  <body>
+    <table align="center" height="430" width="99%" cellspacing="20" bordercolor="#999999"
+
+      border="0" bgcolor="#FFFFFF">
+      <tbody>
+        <tr>
+          <th scope="row"><a href="indexfr.html" target="_self"><img
+
+                src="drapeau_226.gif" height="18" width="32" border="0"></a></th>
+          <td colspan="3" scope="row" align="left" valign="top" bgcolor="#E0DFE3"
+
+            background="ground1.jpg">
+            <div align="right">
+              <pre class="Style47">Spelling-Sound Consistency at the French Elementary School&nbsp;&nbsp;&nbsp;<br>The Contribution of morphology&nbsp;&nbsp;&nbsp;</pre>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">&nbsp;</th>
+          <td colspan="3" scope="row" align="left" valign="top" bgcolor="#FFFFFF">
+            <div align="center"><span class="Style55">! New versions of
+                Manulex-morpho and Manulex-infra (v.2, dec. 2021) are available
+                on this <a style="text-decoration:none" href="https://inframorph.github.io/index.html"
+
+                  target="_blank"> link</a></span></div>
+            <div align="center"><span class="Style55"><a style="text-decoration:none"
+
+                  href="https://inframorph.github.io/index.html" target="_blank"></a><br>
+              </span></div>
+            <div align="center"><span class="Style49">ManulexMorpho is a lexical
+                database allowing to evaluate difficulties in grapheme-phoneme
+                mappings for words occuring in French elementary school readers,
+                while considering the morphological status of orthographic and
+                phonological strings</span></div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" width="5%">&nbsp;</th>
+          <td scope="row" align="left" width="58%" valign="top" bgcolor="#FFFFFF">
+            <p class="Style5" align="justify"> <span class="Style35">In
+                alphabetic writing systems, the consistency of grapheme-phoneme
+                (GP) and phoneme-grapheme (PG) relations is a key factor in
+                learning to read and write. The difficulty of the tasks facing
+                beginning readers/spellers i<span class="Style37"><img src="reading2.jpg"
+
+                    alt="image flottante" class="image flottante" align="left" height="234"
+
+                    width="240"></span>n different orthographies is typically
+                estimated using quantitative data on the consistency of GP or PG
+                relations in the written words to which children are exposed.
+                However, until now, these relations have been examined
+                independently of morphological analysis. The current available
+                quantitative estimates may therefore provide an incomplete
+                picture of the GP and PG consistency of the words included in
+                the books used in elementary schools in France. The <em>Manulex_Morpho</em>
+                database (Peereman, Sprenger-Charolles, &amp; Messaoud-Galusi,
+                2013) was therefore generated to examine the contribution of
+                morphological information (mainly inflectional morphology) to
+                the consistency of GP and PG correspondences in a set of nearly
+                10,000 words (from Lété et al., 2004), corresponding to
+                approximately 98% of the words encountered by children in French
+                primary school readers (textual occurrences).</span></p>
+            <p class="Style35" align="justify">Four categories of morphological
+              cues were used to mark graphemes and phonemes. The vast majority
+              related to word finals. A particular source of difficulty in
+              learning the French morphological system lies in the prevalence of
+              inflectional morphemes that remain silent in speech. For instance,
+              the markers for gender (final <em>-e</em>) and number (fin<span class="Style37"><img
+
+                  src="table.gif" alt="image flottante" class="image flottante"
+
+                  align="right" height="422" width="247"></span>al <em>-s</em>,
+              <em>-x </em>for nouns<em>, </em>final <em>-ent </em>for verbs)
+              are not pronounced in normal speech, and phonological word forms
+              are often homophonic. Morphological cues were used for graphemes
+              and phonemes corresponding to 1) gender and number inflections, 2)
+              verbal inflections, 3) the grapheme <em>-ent</em> and its
+              corresponding pronunciation when occurring in adverbs ending with
+              the derivation <em>-ment </em>(e.g.,<em> rarement,</em> rarely)<em>,
+              </em>4) final consonants that can be silent in the word, but heard
+              in inflected or derived words (e.g., <em>-d</em> in <em>grand-grande-grandeur).
+                </em>Altogether, 7,456 grapheme-phoneme associations were
+              morphologically marked, distributed over 6,377 words (64% of the
+              lexical corpus). The stronger inconsistencies previously observed
+              for word-final than for word-internal graphemes and phonemes (Lété
+              et al., 2008; Peereman et al. 2007) vanished when morphological
+              markers were considered. Thus, taking words’ morphemic composition
+              into account reduces GP and PG ambiguities in reading and
+              spelling.</p>
+            <p class="Style35" align="justify">The <em>Manulex_Morpho</em>
+              database (in excel format) provides the consistency values of GP
+              and PG mappings for each of the words considered in the study. A
+              list of the different GP and PG associations in the word corpus is
+              given in a separate file, together with their corresponding
+              frequency and consistency values. This list can be useful to
+              estimate consistency of GP or PG mappings in pseudowords or in
+              words not included in the <em>Manulex_morpho</em> corpus. These
+              analyses should facilitate the manipulation and control of
+              consistency variables based on objective data in empirical
+              studies, and the development of instructional programs in keeping
+              with the distributional characteristics of the orthography. </p>
+            <p class="Style35" align="justify">Several variants of the <em>Manulex_morpho</em>
+              database are available. The first difference relates to the word
+              frequency index used in the computations. In the analyses
+              initially realized (described in Peereman et al., 2013),
+              consistency of GP and PG mappings was weighted by the U textual
+              frequency values reported in Lété, Sprenger-Charolles, and Colé
+              (2004). <img src="readin.jpg" alt="image flottante" class="image flottante"
+
+                align="right" height="269" width="260">The U index has the
+              advantage over the F index (frequency per million words) to take
+              into account the total frequency of occurrence of the words in the
+              schoolbooks as well as the number of different books in which the
+              words are encountered. However, for various reasons (e.g.,
+              cross-linguistic comparisons), the user may prefer to use
+              consistency values weighted by the textual frequency per million
+              words. This variant of <em>Manulex_morpho</em> is also available,
+              based on the F frequency data (Lété et al., 2004) and reported per
+              million words. </p>
+            <p class="Style35" align="justify">Finally, for each of these two
+              variants, two different estimates were calculated according to how
+              vowels (V) were distinguished. Indeed, in Peereman et al. (2013),
+              consistency values were derived after removal of several
+              distinctions between vowels (e. g., open vs. closed “o”, see the
+              user manual for details). However, depending on their objective,
+              users may prefer to use consistency values which preserve these
+              distinctions. Both types of estimates are available. Additional
+              information is presented in the user manual and in the manuscript.
+            </p>
+            <p class="Style35">&nbsp;</p>
+            <table align="left" width="80%" border="0">
+              <tbody>
+                <tr>
+                  <td scope="row">
+                    <p class="Style37" align="justify"><span class="Style30">References</span><br>
+                      <span class="Style40"><br>
+                        <span class="Style44">Lété, B., Sprenger-Charolles, L.,
+                          &amp; Colé, P. (2004). MANULEX : A grade-level lexical
+                          database from French elementary-school readers. <em>Behavior
+                            Research Methods, Instruments, &amp; Computers, 36</em>,
+                          156-166.</span></span></p>
+                    <p class="Style42" align="justify"><span class="Style43">Lété,
+                        B., Peereman, R. &amp; Fayol, M. (2008). Consistency and
+                        word-frequency effects on spelling among first- to
+                        fifth-grade French children: A regression-based study. <em>Journal
+                          of Memory and Language, 58</em>, 952-977.<br>
+                        <br>
+                        Peereman, R., Lété, B., &amp; Sprenger-Charolles, L.
+                        (2007). Manulex-Infra: Distributional characteristics of
+                        grapheme-phoneme mappings, infra-lexical and lexical
+                        units in child-directed written material. <em>Behavior
+                          Research Methods, 39 </em>, 579-589 . <br>
+                        <br>
+                        Peereman, R., Sprenger-Charolles, L., &amp;
+                        Messaoud-Galusi, S. (2013). The contribution of
+                        morphology to the consistency of spelling-to-sound
+                        relations: A quantitative analysis based on French
+                        elementary school readers. <em>L‘Année Psychologique.</em></span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="Style35">&nbsp;</p>
+            <p class="Style29" align="left">&nbsp;</p>
+            <p class="Style35">&nbsp;</p>
+            <p class="Style36" align="center">&nbsp;</p>
+            <p class="Style36" align="center">&nbsp;</p>
+            <p class="Style36" align="center">&nbsp;</p>
+            <p class="Style37" align="justify">&nbsp;</p>
+          </td>
+          <th scope="row" width="4%">&nbsp;</th>
+          <th scope="row" align="center" width="33%" valign="top">
+            <table width="99%" border="0">
+              <tbody>
+                <tr>
+                  <th scope="row" valign="top">
+                    <p><span class="Style31">The <em>Manulex-Morpho</em>
+                        database </span><br>
+                      <img src="bargrl2.gif" height="13" width="357"></p>
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" height="476" valign="top" bgcolor="#E1E1E1" background="ground2.jpg">
+                    <table align="center" width="93%" border="0">
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <p class="Style9" align="left">Available files (old
+                              version v. 1.2)</p>
+                            <p class="Style32" align="left">Manulex_morpho
+                              database (.zip of excel files; 4 variants): </p>
+                            <table width="97%" border="0">
+                              <tbody>
+                                <tr>
+                                  <td scope="row" valign="top">
+                                    <p class="Style5" align="left">&nbsp;&nbsp;<a
+
+                                        href="Manulex_morpho-U-without.zip" target="_self"><img
+
+                                          src="but.jpg" height="11" width="25" border="0"></a><span
+
+                                        class="Style33"> As a function of U, not
+                                        distinguishing V </span><br>
+                                      <br>
+                                      &nbsp;&nbsp;<a href="Manulex_morpho-U-with.zip"
+
+                                        target="_self"><img src="but.jpg" height="11"
+
+                                          width="25" border="0"></a> <span class="Style33">As
+                                        a function of U, distinguishing V </span></p>
+                                    <p class="Style5" align="left">&nbsp;&nbsp;<a
+
+                                        href="Manulex_morpho-F-without.zip" target="_self"><img
+
+                                          src="but.jpg" height="11" width="25" border="0"></a>
+                                      <span class="Style33">As a function of F,
+                                        not distinguishing V </span></p>
+                                    <p class="Style5" align="left">&nbsp;&nbsp;<a
+
+                                        href="Manulex_morpho-F-with.zip" target="_self"><img
+
+                                          src="but.jpg" height="11" width="25" border="0"></a>
+                                      <span class="Style33">As a function of F,
+                                        distinguishing V </span></p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <p class="Style5" align="left"><a href="mappings_v1.2.zip"
+
+                                target="_self"><img src="but.jpg" height="11" width="25"
+
+                                  border="0"></a> <span class="Style33">Frequency
+                                and consistency of GP and PG mappings (.zip of
+                                excel files; the file includes the results
+                                corresponding to each of the 4 variants) </span></p>
+                            <p class="Style5" align="left"><a href="Manulex_morpho1.2%20-%20user%20manual.pdf"
+
+                                target="_self"><img src="but.jpg" height="11" width="25"
+
+                                  border="0"></a> <span class="Style33">User
+                                Manual</span></p>
+                            <p class="Style5" align="left"><span class="Style14"><a
+
+                                  href="manulex_morpho.pdf" target="_self"><img
+
+                                    src="but.jpg" height="11" width="25" border="0"></a>
+                                <span class="Style33">Peereman, R.,
+                                  Sprenger-Charolles, L., &amp; Messaoud-Galusi,
+                                  S. (2013). The contribution of morphology to
+                                  the consistency of spelling-to-sound
+                                  relations: A quatitative analysis based on
+                                  French elementary school readers. <em>L‘Année
+                                    Psychologique</em></span><em>.</em></span><br>
+                              <br>
+                            </p>
+                            <p class="Style22" align="left"><br>
+                            </p>
+                            <p></p>
+                            <p class="Style22" align="left">Contact:
+                              ronald.peereman@upmf-grenoble.fr </p>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p class="Style9" align="left">&nbsp;</p>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+            <div class="Style5" align="left">
+              <table width="99%" border="0">
+                <tbody>
+                  <tr>
+                    <th scope="row" valign="top">
+                      <p><br>
+                      </p>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      <p class="Style50" align="left">Authors</p>
+                      <p class="Style42" align="justify">Ronald Peereman, CNRS
+                        and Pierre Mendes-France University, LPNC (Laboratoire
+                        de Psychologie &amp; NeuroCognition, UMR 5105), BP 47,
+                        38040 Grenoble Cedex 9. France</p>
+                      <p class="Style42" align="justify">Liliane
+                        Sprenger-Charolles, Associated CNRS and ParisDescartes
+                        University (LPP, Laboratoire Psychologie de la
+                        perception, UMR 8158, PRES Sorbonne-Paris-Cité, Labex
+                        EFL), France. CNRS and Aix-Marseille University, LPC
+                        (Laboratoire de Psychologie Cognitive, UMR 7290, Bat 9,
+                        Case D, 3, place Victor Hugo, 13331 Marseille Cedex 1,
+                        France</p>
+                      <p class="Style42" align="justify">Souhila
+                        Messaoud-Galusi, Research Triangle Institute (RTI
+                        International), Education Policy and Systems, 701 13th
+                        St NW, Suite 750 * Washington, DC 20005. USA</p>
+                      <p class="Style42" align="justify">&nbsp;</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      <p align="center"><span class="Style37"><img src="bargrl2.gif"
+
+                            height="13" width="357"></span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row"> <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" height="498" valign="top">
+                      <p class="Style9" align="left"><br>
+                      </p>
+                      <p class="Style5" align="center">&nbsp;</p>
+                      <p class="Style5" align="center"><span class="Style26">An
+                          electronic version of Manulex_infra (Peereman, Lété,
+                          &amp; Sprenger-Charolles, 2007) has been developped by
+                          Ortéga and Lété (2010). Note that it is the old
+                          version (v.1) of Manulex-infra. See the link above for
+                          the new version (v.2) </span></p>
+                      <p class="Style5" align="center"><a href="http://www.manulex.org/fr/home.html"><img
+
+                            src="infra2.jpg" height="115" width="198" border="0"></a></p>
+                      <p class="Style5" align="center">&nbsp;</p>
+                      <p class="Style5" align="left"><img src="bargrl2.gif" height="13"
+
+                          width="357"> </p>
+                      <p></p>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="Style5">&nbsp; </p>
+              <p class="Style5">&nbsp;</p>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th scope="row">&nbsp;</th>
+          <td class="Style22" scope="row" align="left" valign="top" bgcolor="#FFFFFF">(december,
+            2012, link to ver.2 added dec. 2021)</td>
+          <th scope="row">&nbsp;</th>
+          <th scope="row" align="center" valign="top">&nbsp;</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
