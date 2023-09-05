@@ -1,0 +1,382 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'roboto2';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+p {
+	font-size: 14px;
+	color: #333;
+	font-family: roboto2, 'roboto2', Arial, sans-serif;
+	margin-top: 1em; /* on ajoute un espace avant chaque paragraphe */
+	;
+	margin-left: 3.5em;
+	margin-right: 3.5em;
+	text-align: left;
+	margin-bottom: 0px;
+	line-height: 1.4em;
+  letter-spacing:0.002em;
+}
+p2 {
+	font-size: 16px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 1em; /* on ajoute un espace avant chaque paragraphe */
+	;
+	margin-left: 3.5em;
+	margin-right: 3.5em;
+	text-align: left;
+	margin-bottom: 0px;
+	line-height: 1.4em;
+  letter-spacing:0.01em;
+}
+
+
+h1 {   /* Titre des pages, accueil, description etc... */
+
+    font-size: 18px;
+	font-variant: small-caps;
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 1em; /* on ajoute un espace avant chaque paragraphe */
+
+
+	background-color: #FFFFFF;
+
+	/*line-height: 1.2em;  */
+	margin-left: 10px;
+
+
+}
+
+h2 {   /* Titre des pages, accueil, description etc... */
+
+    font-size: 20px;
+	font-variant: small-caps;
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 1em; /* on ajoute un espace avant chaque paragraphe */
+
+
+	background-color: #FFFFFF;
+
+	/*line-height: 1.2em;  */
+	margin-right: 10%;
+
+
+}
+
+
+
+h6 {
+	font-size: 10px;
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	margin-left: 3.5em;
+  	margin-right: 3.5em;
+	text-align: center;
+}
+
+
+
+
+article {    /*  fond texte des pages  */
+	background-color: #FFFFFF;
+
+	/*line-height: 1.2em;  */
+	margin-left: auto;
+	margin-right: auto;
+	border-radius:20px 20px 20px 20px;
+}
+
+
+
+
+
+
+
+hr  {  /* ligne separateur fr/engl */
+	width: 100%;
+	margin: auto;
+}
+
+
+
+
+
+.retrait {   /* retrait de texte */
+margin-left:15%;
+}
+
+.style-titre {   /* Titre du site 'manulex Morpho' */
+  font-size: 22px;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: #448EA7;
+	text-shadow: 0px 0px 0px #CCC;
+	letter-spacing: 0.2px;
+	margin-bottom: 16px;
+	margin-left: auto;
+	margin-top: 15px;
+	font-style: normal;
+
+	margin-right: auto;
+	text-align: center;
+    	line-height: 1.4em;
+}
+
+
+.style-titre2 {   /* Titre du site 'manulex Morpho' */
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	text-shadow: 2px 2px 0px #CCC;
+	letter-spacing: 3px;
+	margin-bottom: 10px;
+	margin-left: auto;
+
+	font-style: normal;
+	font-weight: 700;
+	margin-right: auto;
+	text-align: center;
+}
+
+.style-langue {
+	font-size: 26px;
+  font-variant: small-caps;
+	margin-left: 10px;
+  margin-top: 0px;
+	color: #ffffff;
+	margin-bottom: 0px;
+
+} 
+
+
+table {     /* pour tables phonetique, morphologie */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;	
+	margin: auto;
+}
+
+table.table2 {     /* pour tables titre */
+
+background: -webkit-linear-gradient(right, #000, #666);
+background: linear-gradient(to bottom,  #EFF4F6 ,  #FEFEFE);
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-size: 14px;	
+
+	margin: auto;
+}
+
+
+
+
+
+#vertmenu { 
+    list-style: none;
+    background-color: #ffffff ;
+    width: 140px; 
+    margin: 0px;
+    padding: 0px; 
+} 
+
+#vertmenu li{
+
+position:relative;
+margin-bottom:20px;
+
+}
+
+#vertmenu a{
+	text-decoration: none;
+	display: block;
+	padding: 5px 5px 5px;
+	color: #646269;
+	font-family: Roboto,Arial, Helvetica, sans-serif;
+
+	font-size: 16px;
+	margin-left: 1px;
+	margin-right: 0px;	
+}
+
+#vertmenu li a:hover, #vertmenu li a:focus, #vertmenu li a:active {
+color:#2E86C1;
+  text-decoration: underline ;
+}
+
+
+/*
+Style menu horizontal ci-dessous
+*/
+	
+#menu-demo2, #menu-demo2 ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	padding-top: 0px;
+}
+
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+border-radius:2px 2px 2px 2px;
+
+}
+#menu-demo2 ul li{
+	display: inherit;
+	border-radius: 0;
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+#menu-demo2 ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu-demo2 ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+/*-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s; */
+}
+#menu-demo2 li:hover ul{
+max-height:25em;
+}
+/* background des liens menus */
+#menu-demo2 li:first-child{
+background-color: #ffffff;
+background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+}
+#menu-demo2 li:nth-child(2){
+background-color: #ffffff;
+background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+}
+#menu-demo2 li:nth-child(3){
+background-color: #ffffff;
+background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+}
+#menu-demo2 li:nth-child(4){
+background-color: #ffffff;
+background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+}
+#menu-demo2 li:nth-child(5){
+background-color: #ffffff;
+background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+}
+#menu-demo2 li:nth-child(6){
+background-color: #ffffff;
+background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+}
+#menu-demo2 li:nth-child(7){
+background-color: #ffffff;
+background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+}
+#menu-demo2 li:last-child{
+background-color: #ffffff;
+background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+}
+
+
+
+/* background des liens sous menus */
+#menu-demo2 li:first-child li{
+background:#ffffff;
+}
+#menu-demo2 li:nth-child(2) li{
+background:#ffffff;
+}
+#menu-demo2 li:nth-child(3) li{
+background:#ffffff;
+}
+
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
+background:#ffffff;
+}
+#menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
+background:#fcfcfc;
+}
+#menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
+background:#ffffff;
+}
+#menu-demo2 li:nth-child(4):hover, #menu-demo2 li:nth-child(2) li:hover{
+background:#ffffff;
+}
+#menu-demo2 li:nth-child(5):hover, #menu-demo2 li:nth-child(3) li:hover{
+background:#ffffff;
+}
+#menu-demo2 li:nth-child(6):hover, #menu-demo2 li:nth-child(2) li:hover{
+background:#ffffff;
+}
+#menu-demo2 li:nth-child(7):hover, #menu-demo2 li:nth-child(3) li:hover{
+background:#ffffff;
+}
+#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+background:#ffffff;
+}
+/* les a href */
+#menu-demo2 a{
+	text-decoration: none;
+	display: block;
+	padding: 1px 8px 5px;
+	color: #575050;
+	font-family: Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	font-size: 27px;
+	margin-left: 1px;
+	margin-right: px;	
+}
+#menu-demo2 ul a{
+	padding: 8px 0;
+	color: #575050;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	font-variant: normal;
+}
+
+#menu-demo2 li:hover li a{
+	color: #575050;
+	/* text-transform: inherit; */
+background: #f5f5f5;
+	text-decoration: none;
+}
+#menu-demo2 li:hover a{
+	color: #3999b5;
+	text-decoration : underline;
+}
+	#menu-demo2 li li:hover a{
+	color: #3999b5;
+	text-decoration : none;
+}
+	
+	
+	/*Tablet View*▼/
+
+	
+
+	
